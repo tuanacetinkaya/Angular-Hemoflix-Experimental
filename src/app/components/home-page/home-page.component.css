@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+  height: 100%;
+}
+a{
+  color: #fff;
+  text-align: center;
+}
+a:hover{
+  color:grey;
+  height: 25px;
+  width: 120px;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+}
+
+.container {
+  /* make container cover 100% of the screen */
+  height: 100vh;
+  max-width: 100vw;
+  right: 0;
+
+  /*CSS Smooth Scroll is here */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+/* hover attributes wwill be changed later */
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+.page-container{
+  
+  margin: 10% 15% 10% 10%;
+  height: calc(100vh - 25%);
+}
+
+div section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: center; */
+  width: 100%;
+  height: 100vh;
+
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+/* .row {
+  margin: 10% 15% 10% 10%;
+  height: calc(100vh - 25%);
+} */
+.middle {
+  padding: 10vh 0%;
+  text-align: left;
+}
+
+.middle button{
+  margin-top: 1rem;
+}
+.hr {
+  display: inline-block;
+}
+.hr:after {
+  content: "";
+  display: block;
+  border-top: 1px solid rgb(255, 255, 255, 0.5);
+  margin-top: 0.5em;
+}
+.headline {
+  font-size: 1em;
+  color: #fff;
+  display: inline-block;
+}
+
+/* .bottom {
+  left: 0;
+  text-align: left;
+  position: relative;
+} */
+section#anlamak {
+  background: url("../../../assets/home-page/home01.jpg") no-repeat center
+    center / cover !important;
+}
+section#dunyam {
+  background: url("../../../assets/home-page/home02.jpg") no-repeat center
+    center / cover !important;
+}
+section#yasamak {
+  background: url("../../../assets/home-page/home03.jpg") no-repeat center
+    center / cover !important;
+}
+section#destekciler {
+  background: url("../../../assets/home-page/home04.jpg") no-repeat center
+    center / cover !important;
+}
+
+/* setup
+* {
+  width: 100%;
+  margin-left: 0;
+  transition: all 0.4s;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+
+}
+p{
+  padding: 5% 0%;
+}
+.container{
+    color: white;
+    padding: 5% 15% 5% 15%;
+    height: 100vh;
+}
+
+
+.headline{
+  font-size: 1em;
+  border-bottom: 1px solid white;
+}
+.middle{
+  padding: 20vh 0%;
+}
+
+
+.bottom{
+  bottom: 5% ;
+}
+
+section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch
+
+} 
+
+#img-anlamak {
+  background-image: url("../../../assets/home-page/home01.jpg") !important;
+}
+#img-dunyam {
+  background-image: url("../../../assets/home-page/home02.jpg") !important;
+}
+#img-yasamak {
+  background-image: url("../../../assets/home-page/home03.jpg") !important;
+}
+#img-destekciler {
+  background-image: url("../../../assets/home-page/home04.jpg") !important;
+}
+
+*/
