@@ -4,30 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=,, initial-scale=1.0" />
     <title>Ana Sayfa</title>
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <!-- current stylesheet for dot-nav addition
-      <link rel="stylesheet" href="../../styles/home-page-dot-nav/jq-vertical-dot-navigation.css"> -->
-  </head>
-  <body>
+
+   </head>
+
+   <body>
+
     <div class="container">
-      <nav class="navbar">
-        <ul>
-          <li><a href="#anlamak">Hemofiliyi Anlamak</a></li>
-          <li><a href="#dunyam">;Hemofili Dünyam</a></li>
-          <li><a href="#yasamak">Hemofili Dünyasında Yaşamak</a></li>
-          <li><a href="#destekciler">Destekçiler</a></li>
-        </ul>
-      </nav>
-      <!-- dot navigation will be initalized here to cover the whole length of navigation bar
-        <nav id="dot-nav"></nav> -->
+     
       <div class="repeat" *ngFor="let section of context">
         <section id="{{ section.id }}">
           <div class="page-container">
-            <!-- <div class="row"> -->
+            <div class="row">
               <h3 class="headline hr">{{ section.headline }}</h3>
 
               <div class="middle column">
@@ -39,12 +26,38 @@
                 </button>
               </div>
               <a href="#{{ section.next }}" class="col-sm-12 col-lg-3"> KAYDIRIN <span> ok </span></a>
-            <!-- </div> -->
+            </div>
           </div>
         </section>
       </div>
     </div>
   </body>
+  <!-- body version 2.0
+  <body>
+
+    <div class="container">
+     
+      <div class="repeat" *ngFor="let section of context">
+        <section id="{{ section.id }}">
+          <div class="page-container">
+            <div class="row">
+              <h3 class="headline hr">{{ section.headline }}</h3>
+
+              <div class="middle column">
+                <h1 class="home-title col-sm-6 col-lg-3">{{ section.title }}</h1>
+                <h1 class="home-title highlight col-sm-6 col-lg-3">{{ section.highlight }}</h1>
+                <p class="col-sm-9">{{ section.description }}</p>
+                <button class="btn btn-outline-light col-md-12 col-lg-3">
+                  Detaylı Bilgi <span>-></span>
+                </button>
+              </div>
+              <a href="#{{ section.next }}" class="col-sm-12 col-lg-3"> KAYDIRIN <span> ok </span></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body> -->
 
   <!-- working demo below -->
   <!-- <body *ngFor="let section of context">
@@ -66,10 +79,4 @@
     </section>
   </body> -->
 
-  <!-- Polyfills -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="../../scripts/js/jq-vertical-dot-nav.js"></script>
-
-  <!-- <script src="/src/app/scripts/dot-nav-min.js"></script> the script tag to previous dot-nav library -->
 </html>

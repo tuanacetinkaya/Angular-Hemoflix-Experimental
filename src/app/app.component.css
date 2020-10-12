@@ -1,6 +1,13 @@
 body {
   overflow-x: hidden;
 }
+
+/* homepage padding */
+.container-fluid {
+  padding: 0;
+}
+
+/* sidebar styles */
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
@@ -34,3 +41,6 @@ body {
     margin-left: -15rem;
   }
 }
+/* end sidebar styles */
+
+/* container for sidebar toggle in small and medium screens */

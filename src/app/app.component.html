@@ -1,57 +1,52 @@
 <div class="d-flex" id="wrapper">
   <!-- Sidebar -->
   <div class="bg-light border-right" id="sidebar-wrapper">
-    <div class="sidebar-heading">hemofili dünyam logo </div>
+    <div class="sidebar-heading">hemofili dünyam logo</div>
     <div class="list-group list-group-flush">
-      <a href="#" class="list-group-item list-group-item-action bg-light">ANA SAYFA</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">HEMOFİLİYİ ANLAMAK</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">HEMOFİLİ DÜNYAM</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">HEMOFİLİ DÜNYASINDA YAŞAMAK</a>
-      <a href="#" class="list-group-item list-group-item-action bg-light">BU DÜNYANIN DESTEKÇİLERİ</a>
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >ANA SAYFA</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >HEMOFİLİYİ ANLAMAK</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >HEMOFİLİ DÜNYAM</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >HEMOFİLİ DÜNYASINDA YAŞAMAK</a
+      >
+      <a href="#" class="list-group-item list-group-item-action bg-light"
+        >BU DÜNYANIN DESTEKÇİLERİ</a
+      >
     </div>
   </div>
   <!-- /#sidebar-wrapper -->
   <!-- Page Content -->
+  <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
   <div id="page-content-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-      <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">
+      <nav
+      class="navbar navbar-expand-lg navbar-light"
+    >
+      <button
+        class="navbar-toggler"
+        id="menu-toggle"
+        type="button"
+        data-toggle="collapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-      </div>
     </nav>
-    <div class="container-fluid">
-      <h1 class="mt-4">Simple Sidebar</h1>
-      <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-      <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
+
+      <app-home-page></app-home-page>
     </div>
+    <!-- /#page-content-wrapper -->
   </div>
-  <!-- /#page-content-wrapper -->
-</div>
-<!-- /#wrapper -->
+  <!-- /#wrapper -->
 
-
-<!-- Old html page - only displays home-page component and a dummy navbar on top 
+  <!-- Old html page - only displays home-page component and a dummy navbar on top 
   
 <!DOCTYPE html>
 <html lang="en">
@@ -70,11 +65,11 @@
     <title>{{ title }}</title>
   </head>
   <body> -->
-    <!-- navigation bar overlaps with the content. That is balanced with margin in the home-page component -->
-    <!-- <app-nav-bar> </app-nav-bar> -->
+  <!-- navigation bar overlaps with the content. That is balanced with margin in the home-page component -->
+  <!-- <app-nav-bar> </app-nav-bar> -->
 
-    <!-- class main-page will be replaced with the routing module -->
-    <!-- <div class="main-page">
+  <!-- class main-page will be replaced with the routing module -->
+  <!-- <div class="main-page">
       <app-home-page></app-home-page> 
     </div>
 
@@ -95,3 +90,4 @@
     ></script>
   </body>
 </html> -->
+</div>
